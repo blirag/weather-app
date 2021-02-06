@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(15, 102, 160);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+header .icon {
+    font-size: 5em;
+    color: rgb(223, 209, 13);
+    margin-bottom: 30px;
+}
+
+header .search input {
+    width: 350px;
+    padding: 10px;
+    font-size: 1.3em;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    outline: none;
+}
+
+header .search button {
+    background-color: rgb(223, 209, 13);
+    font-size: 1.3em;
+    padding: 10px 15px;
+    border: 1px solid rgb(223, 209, 13);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header .search button i {
+    color: #fff;
+}
+
+header .search button:hover {
+    background-color: rgb(15, 102, 160);
+}
+
+.weatherContainer {
+    background-color: rgb(255, 255, 255);
+    width: 350px;
+    height: 350px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    margin-bottom: 30px;
+}
+
+.weatherContainer .weatherDescription {
+    display: flex;
+    flex-direction: column;
+}
+
+.weatherContainer .weatherDescription h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+.weatherContainer .weatherMain .temperature {
+    font-size: 4em;
+}
+
+.weatherContainer .weatherMain .statusIconImg {
+    width: 100px;
+    height: 100px;
+}
+
+.weatherContainer .weatherMain .weatherStatus {
+    font-size: 1.5em;
+}
+
+footer {color: #fff}
+footer a {color:rgb(223, 209, 13)}
+footer a:hover {text-decoration: underline;}

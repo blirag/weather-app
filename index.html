@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="icon" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/02d.svg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <i class="fas fa-smog icon"></i>
+
+        <div class="search">
+            <input type="text" name="city" id="inputCity" placeholder="Digite o nome da sua cidade" class="searchControl">
+            <button class="searchControl" id="searchBtn"><i class="fas fa-search-location"></i></button>
+        </div>
+    </header>
+
+    <main class="weatherContainer">
+        <section class="weatherDescription">
+            <h1 class="cityTitle"></h1>
+
+            <div class="weatherMain">
+                <span class="temperature"></span>
+                <div><img class="statusIconImg"></div>
+                <p class="weatherStatus"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <small>Feito por <a href="http://linkedin.com/in/beatrizliragonzaga" target="_blank">Beatriz Lira</a></small>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
